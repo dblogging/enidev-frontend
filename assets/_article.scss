@@ -1,0 +1,27 @@
+@use "variables";
+
+.section {
+	/*background: variables.$white_100;*/
+	box-shadow: variables.$shadow; 
+	padding: variables.$p_1;
+	margin: 10px 0;
+	&__title {
+		color: variables.$primary;
+	}
+}
+pre, code {
+   white-space: pre;
+   padding: 0;
+   margin: 0;
+   overflow-wrap: anywhere;
+   border-radius: 3px;
+}
+.highlight {
+   padding: 0;
+   margin: 0;
+   background: #002b36;
+   color: #839496;
+   -webkit-text-size-adjust: none;
+   box-shadow: variables.$shadow;
+   border-radius: 3px;
+}
