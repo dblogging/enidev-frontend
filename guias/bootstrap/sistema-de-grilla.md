@@ -4,6 +4,33 @@ layout: post
 
 ## ¿Que es el sistema de  cuadrícula Bootstrap?
 
-<section class="section">
-	El sistema de cuadrícula <em>grilla</em> de Bootstrap proporciona una manera fácil y poderosa de crear diseños responsivos.
-</section>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+    	Una de 3 columnas
+    </div>
+    <div class="col-sm">
+    	Una de 3 columnas
+    </div>
+    <div class="col-sm">
+    	Una de 3 columnas
+    </div>
+  </div>
+</div>
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+  </div>
+</div>
+```
