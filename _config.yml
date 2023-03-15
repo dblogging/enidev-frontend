@@ -2,7 +2,7 @@ title:              Bootstrap
 email:              enidev911@gmail.com
 #description:       description topics
 author:             Enidev911
-baseurl:            /enidev-frontend/
+baseurl:            /enidev-frontend
 url:                https://dblogging.github.io
 domain:             dblogging.github.io
 # Social Profiles
