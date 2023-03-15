@@ -2,11 +2,18 @@ div.highlight {
 	position: relative;
 }
 
+.article__link {
+	text-decoration: none !important;
+}
+
 
 .section {
-	background: #000;
-	color: #fff;
 	&__title {
 		font-size: 1.3em;
 	}
+}
+
+blockquote {
+	border-left: 13px solid #ff86c490;
+	padding-left: 10px;
 }

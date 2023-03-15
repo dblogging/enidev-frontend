@@ -36,11 +36,11 @@ export class CustomButton extends HTMLElement {
     btn = this.getAttribute("data-btn");
 
     connectedCallback() {
-        // console.log(this.nextElementSibling);
         this.codeBlock = this.nextElementSibling;
         this.shadowRoot.appendChild(template.content.cloneNode(true));
         this.button = this.shadowRoot.querySelector("button");
         if (this.btn === "codepen") {
+            this.button.style.background = "url(".concat(ASSETS, "codepen.svg", ")")
             this.button.style.top = "10px"
             this.button.style.right = "55px"
             this.button.title = "Ver en Codepen"
@@ -64,7 +64,10 @@ export class CustomButton extends HTMLElement {
         // handleOnclick
         this.button.addEventListener("click", () => {
             if (this.btn === "codepen") {
-                this.createPen(this.getAttribute("data-lang"), this.parentNode.firstElementChild.textContent);
+
+                const lang = this.parentNode.parentNode.classList[0].split("-");
+
+                this.createPen(lang[1], this.parentNode.firstElementChild.textContent);
             } else if (this.btn === "compiler") {
               console.log("compiler")
             } else if(this.btn === "top") {
