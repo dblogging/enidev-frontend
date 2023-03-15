@@ -10,7 +10,6 @@ button {
     border: none;
     cursor: pointer;   
     z-index: 2;
-    border: 2px solid red;
 }
 
 @keyframes pulse {
