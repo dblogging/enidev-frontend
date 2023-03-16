@@ -81,7 +81,10 @@ Este efecto es bastante sencillo, ya que se trata de cambiar el valor de una pro
   }
 </style>
 <div class="card bg-secondary" style="width: 280px">
-  <img src="//robohash.org/1" class="card-img-top" alt="card de robot 1" />
+  <img 
+    src="//robohash.org/1" 
+    class="card-img-top" 
+    alt="card de robot 1" />
   <div class="card-body">
     <h3 class="card-title">Robot aleatorio</h3>
   </div>
@@ -211,7 +214,7 @@ Este efecto es otro que en lo personal me agrada bastante y muy fácil de hacer,
 <div class="ej-3 container-fluid my-4 p-0">
 <div class="row justify-content-between text-center">
 	<div class="col col-md-6 col-lg-3 mb-2">
-		<div class="card bg-body" style="--i: url(//picsum.photos/290/290)">
+		<div class="card bg-body border-0" style="--i: url(//picsum.photos/290/290)">
 		<div class="card-body text-center py-5">
 			<h5 class="card-title">Lorem</h5>
 			<p class="card-text small">
@@ -222,7 +225,7 @@ Este efecto es otro que en lo personal me agrada bastante y muy fácil de hacer,
   	</div>
   </div>
 	<div class="col col-md-6 col-lg-3 mb-2">
-	<div class="card bg-body" style="--i: url(//picsum.photos/240/240)">
+	<div class="card bg-body border-0" style="--i: url(//picsum.photos/240/240)">
 		<div class="card-body text-center py-5">
 			<h5 class="card-title">Lorem</h5>
 			<p class="card-text small">
@@ -233,7 +236,7 @@ Este efecto es otro que en lo personal me agrada bastante y muy fácil de hacer,
   	</div>
   </div>
 	<div class="col col-md-6 col-lg-3 mb-2">
-		<div class="card bg-body" style="--i: url(//picsum.photos/250/250)">
+		<div class="card bg-body border-0" style="--i: url(//picsum.photos/250/250)">
 		<div class="card-body text-center py-5">
 			<h5 class="card-title">Lorem</h5>
 			<p class="card-text small">
@@ -244,7 +247,7 @@ Este efecto es otro que en lo personal me agrada bastante y muy fácil de hacer,
   	</div>
   </div>
 	<div class="col col-md-6 col-lg-3 mb-2">
-		<div class="card bg-body" style="--i: url(//picsum.photos/270/270)">
+		<div class="card bg-body border-0" style="--i: url(//picsum.photos/270/270)">
 		<div class="card-body text-center py-5">
 			<h5 class="card-title">Lorem</h5>
 			<p class="card-text small">
@@ -294,3 +297,84 @@ Este efecto es otro que en lo personal me agrada bastante y muy fácil de hacer,
   </div>
 </div>
 ```
+
+---
+
+### Pulse
+
+Este es un efecto que consiste en escalar nuestras *cards*, pero para ello necesitaremos usar una animación que es bastante simple, para las animaciones en **CSS** necesitamos declarar una directiva `@keyframes` un **nombre** para la animación y los **selectores**.
+
+
+<style>
+	.ej-4 .card {
+	}
+	.ej-4 .card:hover {
+		animation: pulse .6s infinite alternate;
+	}
+
+	@keyframes pulse {
+		from {
+			transform: scale(1);
+			} 
+		to {
+			transform: scale(1.03);
+			box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, .5);
+		}
+	}
+
+</style>
+<div class="ej-4 container-fluid my-4 p-0">
+	<div class="row">
+		<div class="col col-md-6 col-lg-3 mb-2">
+			<div class="card bg-danger">
+				<img src="//robohash.org/9" alt="robohash imagen">
+				<div class="card-body">
+					<h6 class="card-title">robohash.org</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+```html
+<style>
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .card:hover {
+    animation: pulse .8s infinite alternate;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    } 
+     to
+    {
+      transform: scale(1.02);
+    }
+  }
+</style>
+
+<div class="card bg-danger">
+  <div class="card-body text-center">
+    <img src="//robohash.org/9" class="img-fluid">
+    <div class="card-body">
+     <h6 class="card-title">robohash.org</h6>
+    <p class="card-text">
+      Robot aleatorio
+    </p>
+    </div>
+  </div>
+</div>
+```
+
