@@ -1,6 +1,6 @@
 ---
 layout: post
-background: '/img/sistema-de-grilla.png'
+background: '/img/cards-animadas.png'
 ---
 
 
