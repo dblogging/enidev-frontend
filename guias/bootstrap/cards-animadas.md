@@ -81,10 +81,7 @@ Este efecto es bastante sencillo, ya que se trata de cambiar el valor de una pro
   }
 </style>
 <div class="card bg-secondary" style="width: 280px">
-  <img 
-    src="//robohash.org/1" 
-    class="card-img-top" 
-    alt="card de robot 1" />
+  <img src="//robohash.org/1" class="card-img-top" alt="card de robot 1" />
   <div class="card-body">
     <h3 class="card-title">Robot aleatorio</h3>
   </div>
@@ -302,8 +299,7 @@ Este efecto es otro que en lo personal me agrada bastante y muy fácil de hacer,
 
 ### Pulse
 
-Este es un efecto que consiste en escalar nuestras *cards*, pero para ello necesitaremos usar una animación que es bastante simple, para las animaciones en **CSS** necesitamos declarar una directiva `@keyframes` un **nombre** para la animación y los **selectores**.
-
+Este es un efecto que consiste en escalar nuestras _cards_, pero para ello necesitaremos usar una animación que es bastante simple, para las animaciones en **CSS** necesitamos declarar una directiva `@keyframes` un **nombre** para la animación y los **selectores**.
 
 <style>
 	.ej-4 .card {
@@ -327,14 +323,21 @@ Este es un efecto que consiste en escalar nuestras *cards*, pero para ello neces
 	<div class="row">
 		<div class="col col-md-6 col-lg-3 mb-2">
 			<div class="card bg-danger">
-				<img src="//robohash.org/9" alt="robohash imagen">
+				<img src="//robohash.org/9" alt="robohash imagen" class="card-img-top">
+				<div class="card-body">
+					<h6 class="card-title">robohash.org</h6>
+				</div>
+			</div>
+		</div>
+<div class="col col-md-6 col-lg-3 mb-2">
+			<div class="card bg-danger">
+				<img src="//robohash.org/9" alt="robohash imagen" class="card-img-top">
 				<div class="card-body">
 					<h6 class="card-title">robohash.org</h6>
 				</div>
 			</div>
 		</div>
 	</div>
-
 </div>
 
 ```html
@@ -351,15 +354,14 @@ Este es un efecto que consiste en escalar nuestras *cards*, pero para ello neces
   }
 
   .card:hover {
-    animation: pulse .8s infinite alternate;
+    animation: pulse 0.8s infinite alternate;
   }
-  
+
   @keyframes pulse {
     from {
       transform: scale(1);
-    } 
-     to
-    {
+    }
+    to {
       transform: scale(1.02);
     }
   }
@@ -367,14 +369,11 @@ Este es un efecto que consiste en escalar nuestras *cards*, pero para ello neces
 
 <div class="card bg-danger">
   <div class="card-body text-center">
-    <img src="//robohash.org/9" class="img-fluid">
+    <img src="//robohash.org/9" class="img-fluid" />
     <div class="card-body">
-     <h6 class="card-title">robohash.org</h6>
-    <p class="card-text">
-      Robot aleatorio
-    </p>
+      <h6 class="card-title">robohash.org</h6>
+      <p class="card-text">Robot aleatorio</p>
     </div>
   </div>
 </div>
 ```
-
