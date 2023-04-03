@@ -323,20 +323,36 @@ Este es un efecto que consiste en escalar nuestras _cards_, pero para ello neces
 	<div class="row">
 		<div class="col col-md-6 col-lg-3 mb-2">
 			<div class="card bg-danger">
-				<img src="//robohash.org/9" alt="robohash imagen" class="card-img-top">
+				<img src="//robohash.org/9" alt="robohash imagen">
 				<div class="card-body">
 					<h6 class="card-title">robohash.org</h6>
 				</div>
 			</div>
 		</div>
-<div class="col col-md-6 col-lg-3 mb-2">
-			<div class="card bg-danger">
-				<img src="//robohash.org/9" alt="robohash imagen" class="card-img-top">
-				<div class="card-body">
-					<h6 class="card-title">robohash.org</h6>
-				</div>
-			</div>
-		</div>
+    <div class="col col-md-6 col-lg-3 mb-2">
+      <div class="card bg-secondary">
+        <img src="//robohash.org/12" alt="robohash imagen">
+        <div class="card-body">
+          <h6 class="card-title">robohash.org</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col col-md-6 col-lg-3 mb-2">
+      <div class="card bg-warning">
+        <img src="//robohash.org/32" alt="robohash imagen">
+        <div class="card-body">
+          <h6 class="card-title">robohash.org</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col col-md-6 col-lg-3 mb-2">
+      <div class="card bg-info">
+        <img src="//robohash.org/76" alt="robohash imagen">
+        <div class="card-body">
+          <h6 class="card-title">robohash.org</h6>
+        </div>
+      </div>
+    </div>
 	</div>
 </div>
 
@@ -354,7 +370,7 @@ Este es un efecto que consiste en escalar nuestras _cards_, pero para ello neces
   }
 
   .card:hover {
-    animation: pulse 0.8s infinite alternate;
+    animation: pulse 0.6s infinite alternate;
   }
 
   @keyframes pulse {
