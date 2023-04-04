@@ -67,6 +67,8 @@ Este efecto es bastante sencillo, ya que se trata de cambiar el valor de una pro
 
 ```html
 <style>
+  @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css');
+
   body {
     min-height: 100vh;
     display: flex;
@@ -151,6 +153,8 @@ Este efecto es bastante sencillo, ya que se trata de cambiar el valor de una pro
 
 ```html
 <style>
+  @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css');
+  
   body {
     min-height: 100vh;
     display: flex;
@@ -259,6 +263,8 @@ Este efecto es otro que en lo personal me agrada bastante y muy fácil de hacer,
 
 ```html
 <style>
+  @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css');
+
   body {
     min-height: 100vh;
     display: flex;
@@ -358,6 +364,8 @@ Este es un efecto que consiste en escalar nuestras _cards_, pero para ello neces
 
 ```html
 <style>
+  @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css');
+
   body {
     min-height: 100vh;
     display: flex;
