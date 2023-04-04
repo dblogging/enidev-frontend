@@ -1,5 +1,6 @@
 ---
 layout: post
+background: '/img/consola.png'
 ---
 
 ## La consola de javascript
