@@ -39,7 +39,7 @@ console.log(2 + 2); // 4
     </tr>
     <tr>
       <td><code>console.info()</code></td>
-      <td>Euivalente al anterior. Se utiliza para mensajes informativos.</td>
+      <td>Equivalente al anterior. Se utiliza para mensajes informativos.</td>
     </tr>
     <tr>
       <td><code>console.warn()</code></td>
