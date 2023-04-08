@@ -21,7 +21,7 @@ Para poder decirle que título, contenido y la forma de funcionar al popover, de
 
 - `data-bs-toggle="popover"` : mostar/ocultar popover 
 - `title="Título del popover"` : especifica el texto del encabezado o título
-- `data-bs-content` : especifica el texto que debe mostrarse dentro del cuerpo de la ventana.
+- `data-bs-content="Contenido del popover` : especifica el texto que debe mostrarse dentro del cuerpo de la ventana.
 
 <p align="left">
 	<img src="../assets/popover-explicacion.png" alt="explicación popover" class="size">
@@ -59,7 +59,7 @@ Teniendo ahora el código necesario para poder crear un popover, veamos un ejemp
 
 ### Cambiar de dirección
 
-Hay cuatro direcciones: alineación superior, derecha, inferior, izquierda. Las direcciones se reflejan cuando se usa Bootstrap en RTL.  
+Hay cuatro direcciones en cuanto la alineación: **superior**, **derecha**, **inferior**, **izquierda**. Las direcciones se reflejan cuando se usa Bootstrap en RTL.  
 
 
 ```html

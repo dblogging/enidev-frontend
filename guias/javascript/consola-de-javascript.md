@@ -1,6 +1,9 @@
 ---
 layout: post
 background: '/img/consola.png'
+next:
+  url: 'como-funciona-javascript'
+  title: 'Como funciona javascript'
 ---
 
 ## La consola de javascript
@@ -60,7 +63,7 @@ console.log(2 + 2); // 4
 
 La idea es utilizar en nuestro código la función que más se adapte a nuestra situación en cada caso (*errores graves con `console.error()`, errores leves con `console.warn()`*, etc..).
 
-### Aplicar varios datos  
+### Aplicar varios datos
 
 En el [ejemplo anterior](#ejemplo-hola-mundo), solo hemos aportado un dato por cada línea (*un texto o una operación aritmética*), pero `console.log()` y sus funciones hermanas permiten añadir varios datos en una misma línea, separándolo por comás:  
 

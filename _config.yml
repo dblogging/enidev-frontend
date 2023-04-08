@@ -5,6 +5,7 @@ author:             Enidev911
 baseurl:            /enidev-frontend
 url:                https://dblogging.github.io
 domain:             dblogging.github.io
+perfil:             "/img/perfil.png"
 # Social Profiles
 twitter_username:   
 github_username:    dblogging

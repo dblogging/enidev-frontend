@@ -10,11 +10,12 @@ button {
     border: none;
     cursor: pointer;   
     z-index: 2;
+    transition: right .2s ease;
 }
 
 @keyframes pulse {
     from { transform: scale(1); } 
-    to { transform: scale(1.06); } 
+    to { transform: scale(1.09); } 
 }
 
 @media(max-width: 768px){
@@ -47,14 +48,24 @@ export class CustomButton extends HTMLElement {
         } else if (this.btn === "compiler") {
             console.log("compiler")
         } else if (this.btn === "top"){
-            this.button.style.bottom = "-20px"
-            this.button.style.right = "50%";
+            this.button.style.position = 'fixed'
+            this.button.style.background = "url(".concat(ASSETS, "top.svg", ")")
+            this.button.style.backgroundColor = "#222";
+            this.button.style.bottom = "40px";
+            this.button.style.right = "-140px";
             this.button.style.backgroundRepeat = "no-repeat";
             this.button.style.backgroundPosition = "center"
-            this.button.style.backgroundColor = "#fff";
-            this.button.style.padding = "20px";
+            this.button.style.padding = "25px";
             this.button.style.borderRadius = "30px";
             this.button.style.animation = "pulse .9s ease infinite alternate"
+            // handleOnScroll 
+            window.addEventListener('scroll', () => {
+            if(window.scrollY > 500){
+              this.button.style.right = 40 + "px";
+            } else {
+              this.button.style.right = "-140px";
+            }
+        })
         } 
         else {
             this.button.style.top = "10px"
@@ -72,6 +83,7 @@ export class CustomButton extends HTMLElement {
               console.log("compiler")
             } else if(this.btn === "top") {
                 window.scrollTo({top: 0, behavior: 'smooth'})
+
             }
             else {
                 this.copyClipboard(this.parentNode.firstElementChild.textContent);
@@ -81,6 +93,7 @@ export class CustomButton extends HTMLElement {
                 }, 1000)
             }
         })
+
     }
     createPen(lang, content) {
         const form = document.createElement("form");
