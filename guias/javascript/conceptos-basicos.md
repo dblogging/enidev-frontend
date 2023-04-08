@@ -1,15 +1,13 @@
 ---
 layout: post
 title: 'Conceptos básicos'
-background: '/img/conceptos-basicos.png'
 previous:
   url: 'como-funciona-javascript'
   title: 'Como funciona javascript'
 next:
-	url: 'ecmascript'
-	title: 'La especificación ECMAScript'
+  url: 'ecmascript'
+  title: 'La especificación ECMAScript'
 ---
-
 
 ### Glosario general
 
@@ -39,3 +37,4 @@ idioma = "español"; // nombre: idioma, valor: español, tipo de dato: texto
 - **Iteración**: Este término va muy relacionado con el anterior, y hace sentido cuando cuando un programa está en un bucle repitiendo varias veces la misma tarea, cada una de esas repeticiones se denominan **iteración**.
 
 - **Librería**: Muchas veces, en los desarrollos se busca resolver ciertas tareas o problemas y el código desarrollado lo hacemos pensado en que nos permita reutilizarlo en un futuro desarrollo y como dice el dicho ***&lt;&lt;no estar re-inventando la rueda&gt;&gt;***. Cuando eso ocurre, en javascript se suele empaquetar el código en lo que se denominan ***librerías***, que no es más que código listo para que otros programadores puedan utilizarlo fácilmente en sus programas y beneficiarse de las tareas que resuelven de forma muy sencilla.
+

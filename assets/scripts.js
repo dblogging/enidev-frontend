@@ -21,4 +21,3 @@ codeBlocks.forEach(el => {
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
- 
