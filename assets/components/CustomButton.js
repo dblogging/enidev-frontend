@@ -35,7 +35,6 @@ export class CustomButton extends HTMLElement {
     }
 
     btn = this.getAttribute("data-btn");
-
     connectedCallback() {
         this.codeBlock = this.nextElementSibling;
         this.shadowRoot.appendChild(template.content.cloneNode(true));
