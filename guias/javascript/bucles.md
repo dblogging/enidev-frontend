@@ -58,3 +58,45 @@ Antes de comenzar a ver que tipos de bucles existen en javascript, es necesario 
 
 
 ### Bucle while
+
+El bucle **while** es uno de los bucles más simples que podemos crear. Vamos a partir con un ejemplo básico, para luego ir repasando todo lo que ocurre en cada iteración del bucle:  
+
+```js
+i = 0; // Inicialización de la variable contador
+
+// Condición: Mientras la variable contador sea menor de 5
+while (i < 5) {
+  console.log("Valor de i:", i);
+  i = i + 1; // Incrementamos el valor de i
+}
+```
+
+Lo que ocurre a la hora de hacer funcionar este código es lo siguiente:  
+
+- Antes de entrar en el bucle **while**, se inicializa la variable **i** en **0**.
+- Antes de realizar la primera **iteración** del bucle, comprobamos la **condición**.
+- Si la condición es **verdadera**, hacemos lo que está dentro del bucle.
+- Mostramos por pantalla el valor de **i** y luego incrementamos el valor actual de **i** en **1**.
+- Volvemos al inicio del bucle para hacer una **nueva iteración**. Comprobamos de nuevo la **condición** del bucle.
+- Cuando la condición sea **falsa**, salimos del bucle y continuamos el programa.
+
+
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/db737be71798420289390651a8e999fa" title="bucles.pdf" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 314;" data-ratio="1.78343949044586"></iframe>
+
+Un bucle **while** es muy simple, pero requiere que declaremos una variable previamente para evaluar y evitar que el programa se quede **colgado en un bucle infinito** por olvidarnos de este factor y además dentro debemos recordar incrementar el valor de la variable, por lo que el bucle **for** resulte más interesante, ya que para hacer un bucle de este tipo hay que escribir previamente siempre tres factores.
+
+> La operación **i = i + 1** es lo que se suele llamar un incremento de una variable. Es muy común simplificarlo como **i++**, que hace exactamente lo mismo: aumenta su valor en 1.
+
+
+### Bucle for
+
+El bucle **for** es quizás uno de los más utilizado en el mundo de la programación. En javascript se utiliza exactamente igual que en otros lenguajes como **Java**, **C/C++**. Veamos replicar el mismo ejemplo anterior utilizando un bucle for:
+
+
+```js
+// for (inicialización; condición; incremento)
+for (i = 0; i < 5; i++) {
+  console.log("Valor de i:", i);
+}
+```

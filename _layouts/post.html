@@ -18,7 +18,7 @@ layout: default
             <h1>{{ page.title }}</h1>
             {% endif %}
             {% if page.subtitle %}
-            <h2 class="subheading">{{ page.subtitle }}</h2>
+            <h2 class="subheading px-3 font-italic">{{ page.subtitle }}</h2>
             {% endif %}
            <!--  <span class="meta">Publicado por
               <a href="#">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a>
@@ -38,18 +38,36 @@ layout: default
         {{ content }}
 
         <hr>
-       <div class="bg-light position-relative footer-post rounded my-5 p-0">
-          <div class="row align-items-center">
-            <div class="col-3 text-center mx-auto">
-              <img src="{{ site.perfil | prepend: site.baseurl | replace: '//', '/' }}" height="180" class="position-relative" style="top: -5px; filter: grayscale(100);">
-            </div>
-            <div class="col-9 px-2 font-italic">
+        <div class="footer-post my-5 text-center">
+           <img 
+            src="{{ site.perfil | prepend: site.baseurl | replace: '//', '/' }}" class="w-25" 
+            style="filter: grayscale(100);cursor: pointer;"
+            data-toggle="popover"
+            data-placement="top"
+            data-html="true"
+            title="EniDev911"
+            data-content="
+              <a href='//github.com/enidev911' 
+                class='text-decoration-none'
+                target='_blank'>
+                <img src='//raw.githubusercontent.com/EniDev911/assets/main/svg/software/github.svg' height='25'
+              </a>
+              <a href='https://www.linkedin.com/in/marco-contreras-herrera-9b6952213/' 
+                class='text-decoration-none'
+                target='_blank'>
+                <img src='https://cdn-icons-png.flaticon.com/512/61/61109.png?w=360' height='25'
+              </a>
+              <a href='https://discord.gg/jCNXc7PWzM' 
+                class='text-decoration-none'
+                target='_blank'>
+                <img src='https://cdn-icons-png.flaticon.com/512/5968/5968898.png' height='25'
+              </a>"
+            >            
+            <div class="mt-3 font-italic">
               Un simple programador. Apasionado por las nuevas tecnologías, amante de la teoría de conjuntos.
             </div>
-          </div>
-          
-       </div> 
-     
+        </div>
+
         <div class="clearfix">
 
           {% if page.previous.url %}
@@ -88,5 +106,6 @@ layout: default
 
       </div>
     </div>
+
   </div>
   <enidev-button data-btn="top"></enidev-button>

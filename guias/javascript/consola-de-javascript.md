@@ -31,30 +31,30 @@ console.log(2 + 2); // 4
 ```
 
 
-<table class="table">
-  <thead>
+<table class="table table-striped table-borderless shadow-sm border">
+  <thead class="bg-warning">
     <th>Función</th>
     <th>Descripción</th>
   </thead>
   <tbody>
     <tr>
-      <td><code>console.log()</code></td>
+      <th><code><span class="text-secondary">console.</span>log()</code></th>
       <td>Muestra la información proporcionada en la consola javascript.</td>
     </tr>
     <tr>
-      <td><code>console.info()</code></td>
+      <th><code><span class="text-secondary">console.</span>info()</code></th>
       <td>Equivalente al anterior. Se utiliza para mensajes informativos.</td>
     </tr>
     <tr>
-      <td><code>console.warn()</code></td>
+      <th><code><span class="text-secondary">console.</span>warn()</code></th>
       <td>Muestra información de advertencia. Aparece en amarillo</td>
     </tr>
     <tr>
-      <td><code>console.error()</code></td>
+      <th><code><span class="text-secondary">console.</span>error()</code></th>
       <td>Muestra información de error. Aparece en rojo</td>
     </tr>
     <tr>
-      <td><code>console.clear()</code></td>
+      <th><code><span class="text-secondary">console.</span>clear()</code></th>
       <td>Limpia la consola. Equivalente a pulsar <strong><kbd>CTRL</kbd> + <kbd>L</kbd></strong></td>
     </tr>
   </tbody>

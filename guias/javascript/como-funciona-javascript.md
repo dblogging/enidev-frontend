@@ -66,7 +66,7 @@ Si vemos en los ejemplos anteriores, la etiqueta <span class="tag">script</span>
 
 Es posible que te hayas encontrado con ejemplos o tutoriales de javascript donde dicha etiqueta <span class="tag">script</span> esté ubicada en otra parte del documento, por ejemplo dentro de la cabecera (<span class="tag">head</span>). Veamos las posibilidades es esto: 
 
-<table class="table table-striped table-borderless shadow border">
+<table class="table table-striped table-borderless shadow-sm border">
   <thead class="bg-warning">
     <th class="align-top">Ubicación</th>
     <th>¿Cómo se descarga el archivo?</th>

@@ -1,7 +1,6 @@
 ---
 layout: post
-background: '/img/js.png'
-title: 'Estructuras de control'
+background: '/img/estructuras-de-control.png'
 previous:
   url: 'comentarios-de-codigo'
   title: 'Comentarios de código'
@@ -18,7 +17,7 @@ next:
 Al hacer un programa necesitaremos establecer **condiciones** o **decisiones**, donde buscamos que el navegador realice una **acción A** si  **se cumple** una condición o una **acción B** si **no se cumple**. Este es el primer tipo de estructuras de control que contraremos. Pero existen varias estructuras de control:
 
 
-<table class="table table-striped table-borderless shadow border">
+<table class="table table-striped table-borderless shadow-sm border">
   <thead class="bg-warning">
     <th class="align-top">Estructura de control</th>
     <th class="align-top">Descripción</th>

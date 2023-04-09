@@ -82,7 +82,6 @@ export class CustomButton extends HTMLElement {
               console.log("compiler")
             } else if(this.btn === "top") {
                 window.scrollTo({top: 0, behavior: 'smooth'})
-
             }
             else {
                 this.copyClipboard(this.parentNode.firstElementChild.textContent);

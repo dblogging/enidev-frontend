@@ -22,7 +22,7 @@ Por ende es importante considerar mantener los navegadores actualizados, todo va
 A lo largo de los años, javascript ha ido sufriendo modificaciones que los navegadores han ido implementando para acomodarse a la última versión de **ECMASCript** cuanto antes. La lista de versiones de **ECMASCript** aparecidas hasta el momento son las siguientes, donde encontraremos las versiones enmarcadas en lo que podemos considerar **el pasado de javascript**:  
 
 
-<table class="table table-striped table-borderless shadow border">
+<table class="table table-striped table-borderless shadow-sm border">
   <thead class="bg-warning">
     <th class="align-top">Edición</th>
     <th class="align-top">Fecha</th>
@@ -72,7 +72,7 @@ A lo largo de los años, javascript ha ido sufriendo modificaciones que los nave
 A partir del año 2015, se marcó un antes y un después en el mundo de javascript, estableciendo una serie de cambios que lo tranformarían en un lenguaje moderno, partiendo desde la especificación de dicho año, hasta la actualidad:  
 
 
-<table class="table table-striped table-borderless shadow border">
+<table class="table table-striped table-borderless shadow-sm border">
   <thead class="bg-warning">
     <th class="align-top">Edición</th>
     <th class="align-top">Fecha</th>
@@ -131,7 +131,7 @@ Dicho esto, teniendo en cuenta todos estos detalles, es muy habitual que el prog
 
 Generalmente, el programador suele tomar una de las siguientes estrategias &lt;&lt;crossbrowser&gt;&gt; para asegurarse que el código funcionará en todos los navegadores:  
 
-<table class="table table-striped table-borderless shadow border">
+<table class="table table-striped table-borderless shadow-sm border">
 	<thead class="bg-warning">
 		<th>Enfoque</th>
 		<th>Código escrito</th>

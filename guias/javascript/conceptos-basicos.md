@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 'Conceptos básicos'
+subtitle: 'Glosario fundamental'
+background: '/img/conceptos-basicos.png'
 previous:
   url: 'como-funciona-javascript'
   title: 'Como funciona javascript'
@@ -12,7 +14,7 @@ next:
 ### Glosario general
 
 
-- **Proramas**: En programación nos referimos a un &lt;&lt;programa&gt;&gt; a el conjunto total de código que desarrollas para satisfacer una demanda. En javascript, quizás el término más utilizado es **aplicación web** (*cuando es un desarrollo con mucha cantidad de javascript*). También se suele generalizar utilizando términos como &lt;&lt;script&gt;&gt;.
+- **Programas**: En programación nos referimos a un &lt;&lt;programa&gt;&gt; a el conjunto total de código que desarrollas para satisfacer una demanda. En javascript, quizás el término más utilizado es **aplicación web** (*cuando es un desarrollo con mucha cantidad de javascript*). También se suele generalizar utilizando términos como &lt;&lt;script&gt;&gt;.
 
 - **Algoritmo**: Un algoritmo es un conjunto de pasos conocidos, en un determinado orden, para conseguir realizar una tarea de forma satisfactoria y lograr un objetivo.
 
