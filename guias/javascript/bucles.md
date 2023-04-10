@@ -5,6 +5,9 @@ title: 'Bucles e iteraciones'
 previous:
   url: 'estructuras-de-control'
   title: 'Estructuras de control'
+next:
+  url: 'operadores-basicos'
+  title: 'Operadores básicos'
 ---
 
 Una de las principales ventajas de la programación es la posibilidad de crear **bucles y repiticiones** para tareas específicas, y que no tengamos que realizarlas varias veces de forma manual. Existen muchas formas de realizar bucles, vamos a ver los más básicos, similares en otros lenguajes de programación:  
@@ -98,5 +101,21 @@ El bucle **for** es quizás uno de los más utilizado en el mundo de la programa
 // for (inicialización; condición; incremento)
 for (i = 0; i < 5; i++) {
   console.log("Valor de i:", i);
+}
+```
+
+Como vemos, la sintaxis de un **bucle for** es mucho más compacta y rápida de escribir que la de un **bucle while**. La primera vez puede parecer algo confuso, pero es mucho más práctica porque te obliga a escribir la **inicialización**, la **condición** y el **incremento** antes del propio bucle, y eso hace que no te olvides de estos tres puntos fundamentales.
+
+>En programación es muy habitual empezar a contar desde **cero**. Mientras que en la vida real se contaría **desde 1 hasta 10**, en programación se contaría **desde 0 hasta 9**.
+
+
+### Incremento múltiple
+
+Aunque no suele ser habitual, es posible añadir varias inicializaciones o incrementos en un bucle **for** separando por comas. En el siguiente ejemplo además de aumentar el valor de una variable **i**, incializamos una variable con el valor **5** y lo vamos decrementando:  
+
+
+```js
+for (i = 0, j = 5; i < 5; i++, j--) {
+  console.log("Valor de i y j:", i, j);
 }
 ```
