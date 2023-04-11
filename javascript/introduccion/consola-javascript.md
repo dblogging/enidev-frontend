@@ -32,7 +32,7 @@ console.log(2 + 2); // 4
 
 
 <table class="table table-striped table-borderless shadow-sm border">
-  <thead class="bg-warning">
+  <thead class="thead-js">
     <th>Función</th>
     <th>Descripción</th>
   </thead>

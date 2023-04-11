@@ -23,7 +23,7 @@ A lo largo de los años, javascript ha ido sufriendo modificaciones que los nave
 
 
 <table class="table table-striped table-borderless shadow-sm border">
-  <thead class="bg-warning">
+  <thead class="thead-js">
     <th class="align-top">Edición</th>
     <th class="align-top">Fecha</th>
     <th>Nombre formal>informal</th>
@@ -73,7 +73,7 @@ A partir del año 2015, se marcó un antes y un después en el mundo de javascri
 
 
 <table class="table table-striped table-borderless shadow-sm border">
-  <thead class="bg-warning">
+  <thead class="thead-js">
     <th class="align-top">Edición</th>
     <th class="align-top">Fecha</th>
     <th>Nombre formal>informal</th>
@@ -132,7 +132,7 @@ Dicho esto, teniendo en cuenta todos estos detalles, es muy habitual que el prog
 Generalmente, el programador suele tomar una de las siguientes estrategias &lt;&lt;crossbrowser&gt;&gt; para asegurarse que el código funcionará en todos los navegadores:  
 
 <table class="table table-striped table-borderless shadow-sm border">
-	<thead class="bg-warning">
+	<thead class="thead-js">
 		<th>Enfoque</th>
 		<th>Código escrito</th>
 		<th>Descripción</th>

@@ -1,7 +1,6 @@
 ---
 layout: post
-background: '/img/js.png'
-title: 'Como funciona Javascript'
+background: '/img/js-comentarios.png'
 previous:
   url: 'ecmascript'
   title: 'Especificación EcmaScript'

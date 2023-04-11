@@ -1,7 +1,6 @@
 ---
 layout: post
-background: '/img/js.png'
-title: 'Bucles e iteraciones'
+background: '/img/js-bucles.png'
 previous:
   url: 'estructuras-de-control'
   title: 'Estructuras de control'
@@ -13,8 +12,8 @@ next:
 Una de las principales ventajas de la programación es la posibilidad de crear **bucles y repiticiones** para tareas específicas, y que no tengamos que realizarlas varias veces de forma manual. Existen muchas formas de realizar bucles, vamos a ver los más básicos, similares en otros lenguajes de programación:  
 
 
-<table class="table table-striped table-borderless shadow border">
-	<thead class="bg-warning">
+<table class="table table-striped table-borderless shadow-sm border">
+	<thead class="thead-js">
 		<th>Tipo de bucle</th>
 		<th>Descripción</th>
 	</thead>

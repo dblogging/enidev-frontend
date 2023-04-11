@@ -1,6 +1,8 @@
 ---
 layout: post
+lang: 'javascript'
 background: '/img/estructuras-de-control.png'
+title: 'Estructuras condicionales'
 previous:
   url: 'comentarios-de-codigo'
   title: 'Comentarios de código'
@@ -18,8 +20,8 @@ Al hacer un programa necesitaremos establecer **condiciones** o **decisiones**, 
 
 
 <table class="table table-striped table-borderless shadow-sm border">
-  <thead class="bg-warning">
-    <th class="align-top">Estructura de control</th>
+  <thead class="thead-js">
+    <th class="align-top text-center">Estructura de control</th>
     <th class="align-top">Descripción</th>
   </thead>
   <tbody>

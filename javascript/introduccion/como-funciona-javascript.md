@@ -3,7 +3,7 @@ layout: post
 background: '/img/js.png'
 title: 'Como funciona Javascript'
 previous:
-  url: 'consola-de-javascript'
+  url: 'consola-javascript'
   title: 'Consola de javascript'
 next:
   url: 'conceptos-basicos'
@@ -92,6 +92,4 @@ Es posible que te hayas encontrado con ejemplos o tutoriales de javascript donde
 </table> 
 
 >Tener en cuenta que el navegador puede descargar un documento javascript en cualquier momento de la carga de la página y necesitamos saber cuál es el más oportuno para nosotros.
-
-
 

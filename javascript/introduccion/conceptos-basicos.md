@@ -1,8 +1,7 @@
 ---
 layout: post
-title: 'Conceptos básicos'
-subtitle: 'Glosario fundamental'
 background: '/img/conceptos-basicos.png'
+title: 'Conceptos básicos'
 previous:
   url: 'como-funciona-javascript'
   title: 'Como funciona javascript'
@@ -10,6 +9,7 @@ next:
   url: 'ecmascript'
   title: 'La especificación ECMAScript'
 ---
+
 
 ### Glosario general
 

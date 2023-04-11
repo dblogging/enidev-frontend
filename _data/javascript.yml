@@ -1,0 +1,21 @@
+- category: introducción
+  uri: introduccion/consola-javascript
+  title: Consola de javascript
+- category: introducción
+  uri: introduccion/como-funciona-javascript
+  title: Como funciona javascript
+- category: introducción
+  uri: introduccion/conceptos-basicos
+  title: Conceptos básicos
+- category: introducción
+  uri: introduccion/comentarios-de-codigo
+  title: Comentarios de código
+- category: introducción
+  uri: introduccion/estructuras-de-control
+  title: Estructuras de control
+- category: introducción
+  uri: introduccion/bucles
+  title: Bucles e iteraciones
+- category: 'tipos de datos'
+  uri: string/posiciones-substrings
+  title: Posiciones y substrings

@@ -176,9 +176,7 @@ No obstante, es preferible utilizar el operador **`[]`** para obtener el caráct
         href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/undefined" target="_blank"><strong>undefined</strong></a>
       si en esa posición no existe ningún carácter.  
 
-El método `.concat(str1, str2...)` permite concatenar (*unir*) los textos pasados por parámetros al de la propia variable. AL igual que el método anterior es preferible utilizar el operador `+`, ya que es
-      mucho más rápido y legible. Debemos tener mucho cuidado con utilizar el operador <code class="path">+</code>, ya que depende de
-      los tipos de datos con los que se usen puede producir un efecto diferentes. El operador <code class="path">+</code> usado con
+El método `.concat(str1, str2...)` permite concatenar (*unir*) los textos pasados por parámetros al de la propia variable. AL igual que el método anterior es preferible utilizar el operador `+`, ya que es mucho más rápido y legible. Debemos tener mucho cuidado con utilizar el operador `+`, ya que depende de los tipos de datos con los que se usen puede producir un efecto diferentes. El operador <code class="path">+</code> usado con
       <strong>String</strong> realiza concatenaciones, mientras que usado con tipos <a
         href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number" target="_blank"><strong>Number</strong></a>
       realiza sumas.
