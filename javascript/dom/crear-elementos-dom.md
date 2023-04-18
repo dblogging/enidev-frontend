@@ -102,5 +102,28 @@ El método **`cloneNode(deep)`** acepta un parámetro <span class="badge badge-d
 
 Por último, la propiedad **isConnected** nos india si el nodo en cuestión está conectado al **DOM**, es decir, si está insertado en el documento **HTML**:
 
+- Si es **true**, significa que el elemento está conectado al DOM.
+- Si es **false**, significa que el elemento no está conectado al DOM.
+
+Hasta ahora, hemos visto como crear elementos **HTML** con javascript, pero no hemos visto como modificar los atributos **HTML** de dichas etiquetas creadas. En general, una vez tenemos un elemento sobre el que vamos a crear algunos atributos, lo más sencillo es **asignarle valores como propiedades** de objetos:  
+
+
+```js
+const div = document.createElement("div");
+
+div.id = "page";
+div.className = "data";
+div.style = "color: red";
+```
+
+Sin embargo, en algunos casos esto se puede complicar (*como se ve en uno de los casos del ejemplo anterior*). Por ejemplo, la palabra **class** (*para crear clases*) o la palabra **for** (*para bucles*) son palabras reservadas de javascript y no se podrían utilizar para crear atributos. Por ejemplo, si queremos establecer una clase, se debe utilizar la propiedad **className**.
+
+>Es posible asignar a la propiedad **className** varias clases a un <span class="badge badge-warning">string</span> separadas por espacio. De esta forma se asignarán múltiples clases. Aún así, recordemos utilizar la propiedad **classList** que estaré explicando en secciones posteriores.
+
+Aunque la forma anterior es la más rápida, tenemos algunos métodos para utilizar en un elemento **HTML** y añadir, modificar o eliminar sus atributos:
+
+
+
+
 
 
