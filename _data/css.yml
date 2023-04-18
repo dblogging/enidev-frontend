@@ -4,3 +4,6 @@
 - category: modelo de caja
   uri: modelo-de-cajas/propiedad-box-sizing
   title: Propiedad box sizing
+- category: modelo de caja
+  uri: modelo-de-cajas/margenes-y-rellenos
+  title: Márgenes y rellenos

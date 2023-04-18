@@ -19,3 +19,7 @@
 - category: 'tipos de datos'
   uri: string/posiciones-substrings
   title: Posiciones y substrings
+# DOM
+- category: 'DOM'
+  uri: dom/crear-elementos-dom
+  title: Crear elementos del DOM

@@ -58,3 +58,99 @@ Existe un truco muy sencillo y práctico para **centrar horizontalmente un eleme
 <div class="box">
 </div>
 ```
+
+### La propiedad padding (rellenos)
+
+
+Al igual que con los márgenes, los **padding** tienen varias propiedades para indicar el relleno de cada zona:  
+
+
+<table class="table table-striped table-borderless shadow-sm border">
+  <thead class="thead-css">
+    <th>Propiedad</th>
+    <th>Valor</th>
+    <th>Significado</th>
+  </thead>
+  <tbody>
+        <tr>
+          <th>padding-top</th>
+          <td><strong>0</strong> | <span class="badge badge-info">size</span></td>
+          <td>Establece un tamaño de relleno superior.</td>
+        </tr>
+        <tr>
+          <th>padding-left</th>
+          <td><strong>0</strong> | <span class="badge badge-info">size</span></td>
+          <td>Establece un tamaño de relleno a la izquierda.</td>
+        </tr>
+        <tr>
+          <th>padding-right</th>
+          <td><strong>0</strong> | <span class="badge badge-info">size</span></td>
+          <td>Establece un tamaño de relleno a la derecha.</td>
+        </tr>
+        <tr>
+          <th>padding-bottom</th>
+          <td><strong>0</strong> | <span class="badge badge-info">size</span></td>
+          <td>Establece un tamaño de relleno inferior.</td>
+        </tr>
+  </tbody>
+</table>
+
+
+Como se puede observar en la tabla, por defecto no hay relleno (el relleno está en cero), aunque puede modificarse tanto con las propiedades anteriores como la propiedad de atajo que veremos en breve.
+
+
+### Atajo: Modelo de cajas
+
+
+Al igual que en otras propiedades de **CSS**, también existe una propiedad de atajo denominada **margin** y **padding**. Con estas propiedades evitamos tener que escribir valores de cada parte (*izquierda*, *derecha*, *arriba*, *abajo...*), especialmente importante si es el mismo valor en las cuatro.
+
+No obstante, tenemos 4 modalidades, que dependen del número de parámetros de la propiedad: 
+
+
+
+<table class="table table-striped table-borderless shadow-sm border">
+  <thead class="thead-css">
+    <th>Propiedad</th>
+    <th>Valores</th>
+    <th>Significado</th>
+  </thead>
+  <tbody>
+        <tr>
+          <td><strong>padding</strong> o <strong>margin</strong></td>
+          <td><span class="badge badge-info">size</span></td>
+          <td>1 parámetro. Establece el mismo margen a <strong>todos</strong> los lados.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><span class="badge badge-info">size</span> <span class="badge badge-info">size</span></td>
+          <td>2 parámetros. Establece el margen para <strong>top/bottom</strong> y <strong>left/right</strong>.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><span class="badge badge-info">size</span> <span class="badge badge-info">size</span> <span class="badge badge-info">size</span></td>
+          <td>3. parámetros. Establece el margen para <strong>top, left/right</strong> y <strong>bottom</strong></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><span class="badge badge-info">size</span> <span class="badge badge-info">size</span> <span class="badge badge-info">size</span> <span class="badge badge-info">size</span></td>
+          <td>4 parámetros. Establece el margen <strong>top, right, bottom</strong> y <strong>left</strong>.</td>
+        </tr>
+  </tbody>
+</table>
+
+Cabe destacar que la propiedad **border-width** pasa por lo mismo que con **padding** y **margin**, actuando en este caso en relación al **grosor del borde** de un elemento. Veamos algunos ejemplos:  
+
+
+```css
+.examples {
+  margin: 15px;
+  /* Equivalente a margin: 15px 15px 15px 15px; */
+
+  margin: 20px 10px;
+  /* Equivalente a margin: 20px 10px 20px 10px; */
+
+  margin: 20px 10px 5px;
+  /* Equivalente a margin: 20px 10px 5px 10px; */
+}
+```
+
