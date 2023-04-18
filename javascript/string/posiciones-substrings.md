@@ -2,6 +2,9 @@
 layout: post
 background: '/img/js-posiciones-substring.png'
 title: 'Posiciones y substring'
+previous:
+  url: '../tipos-de-datos/strings'
+  title: '¿Qué es un String?'
 ---
 
 <a href="{{ '/javascript' | relative_url }}">
@@ -115,4 +118,130 @@ console.log(frase.lastIndexOf("n", 1));      // -1
 ```
 
 De la misma forma, se devuelve **-1** si no encuentra la ocurrencia, y el parámetro **from** es opcional, de indicarlo, se comenzará a buscar desde esa posición, hacia el principio del <span class="badge badge-warning">string</span>.
+
+### Obtener fragmentos (substring)
+
+javascript también posee una serie de **métodos** mediante los cuales podemos crear **substrings** formados por un fragmento del <span class="badge badge-warning">string</span> original. Veamos de que métodos se trata:
+
+
+<table class="table table-striped table-borderless shadow-sm border">
+  <thead class="thead-js">
+    <th>Método</th>
+    <th>Descripción</th>
+    <th>Retorna</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="método"><span class="badge badge-warning">es2015</span> <strong><code>.repeat(num)</code></strong></td>
+          <td data-label="descripción">Devuelve el <span class="badge badge-warning">string</span> repetido la cantidad especificado en <strong>num</strong>.</td>
+          <td data-label="retorna"><span class="badge badge-warning">string</span></td>
+        </tr>
+        <tr>
+          <td data-label="método"><strong><code>.substring(start, end)</code></strong></td>
+          <td data-label="descripción">Devuelve el <strong>substring</strong> desde la posición <strong>start</strong> hasta <strong>end</strong>.</td>
+          <td><span class="badge badge-warning">string</span></td>
+        </tr>
+        <tr>
+          <td><strong><code>.substr(start, size)</code></strong></td>
+          <td>Devuelve el <strong>substring</strong> desde la posición <strong>start</strong> hasta <strong>start+size</strong>.</td>
+          <td><span class="badge badge-warning">string</span></td>
+        </tr>
+        <tr>
+          <td><strong><code>.slice(start, end)</code></strong></td>
+          <td>Identico a <code class="font-weight-bold">.substr()</code> con leves diferencias.</td>
+          <td><span class="badge badge-warning">string</span></td>
+        </tr>
+  </tbody>
+</table>
+
+### Repetir cadena de texto
+
+Mediante el método **`.repeat()`** puedes repetir el texto del <span class="badge badge-warning">string</span> exactamente el número de veces indicado por parámetro:  
+
+```js
+const text = "Mate";
+
+console.log(text.repeat(4));     // "MateMateMateMate"
+console.log(text.repeat(1));     // "Mate"
+console.log(text.repeat(0));     // ""
+console.log(text.repeat(-1));    // ERROR (Valor negativo)
+```
+
+### Fragmentos de texto substring
+
+Otras de las operaciones fundamentales de los <span class="badge badge-warning">string</span> es la posibilidad de extraer fragmentos de texto de un <span class="badge badge-warning">string</span>. Para ello, tenemos dos aproximaciones: el método **`substring()`** o el método **`substr()`**.
+
+- El método **`substring(start, end)`** devuelve un <span class="badge badge-warning">string</span> con el **fragmento de texto** desde la posición **start** hasta la posición **end**. Si se omite el parámetro **end**, el subtexto abarcará desde **start** hasta el final.  
+
+Veamos un ejemplo:  
+
+```js
+const text = "Submarino";
+
+console.log(text.substring(3));    // 'marino' (desde el 3 en adelante)
+console.log(text.substring(3, 5)); // 'ma'     (desde el 3, hasta el 5)
+console.log(text.substr(3));       // 'marino' (desde el 3 en adelante)
+console.log(text.substr(3, 5));    // 'marin'  (desde el 3, hasta el 3+5)
+console.log(text.substr(-3));      // 'ino'    (desde la posición 3 desde el final, en adelante)
+console.log(text.substr(-3, 2));   // 'in'     (desde la posición 3 desde el final, hasta 2 posiciones más)
+```
+
+Observa que el método **.substr()** con un valor negativo en su primer parámetro **start**, empieza a contar desde el final. Esto es algo que no ocurre con el método **.substring()**.
+
+### Dividir un texto en partes (array)
+
+
+Un método muy útil y versatíl es **`.split(text)`**. Permite **dividir** un <span class="badge badge-warning">string</span> por el substring **text** utilizándolo como separador las veces que haga falta. Como resultado, devolverá un <span class="badge badge-success">array</span> con cada una de las partes divididas. Es muy útil para **crear arrays**, o dividir textos que tienen **separadores** repetidos (*comas*, *puntos*, *etc...*) en varias partes:  
+
+
+<table class="table table-striped table-borderless shadow-sm border">
+  <thead class="thead-js">
+    <th>Método</th>
+    <th>Descripción</th>
+    <th>Retorna</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="método"><strong><code>.split(str)</code></strong></td>
+          <td data-label="descripción">Separa la cadena de texto en varias partes, usando el <span class="badge badge-warning">string</span> <strong>str</strong> como separador.</td>
+          <td data-label="retorna"><span class="badge badge-success">array</span></td>
+        </tr>
+        <tr>
+          <td data-label="método"><strong><code>.split(str, limit)</code></strong></td>
+          <td data-label="descripción">Identico al anterior, pero crea como máximo de <strong>limit</strong> fragmentos.</td>
+          <td><span class="badge badge-success">array</span></td>
+        </tr>
+        <tr>
+          <td><strong><code>.split(regexp)</code></strong></td>
+          <td>Separa el texto usando la <span class="badge badge-danger">regexp</span> como separador.</td>
+          <td><span class="badge badge-success">array</span></td>
+        </tr>
+        <tr>
+          <td><strong><code>.split(regexp, limit)</code></strong></td>
+          <td>Identico al anterior pero crea como máximo de <strong>limit</strong> fragmentos.</td>
+          <td><span class="badge badge-success">array</span></td>
+        </tr>
+  </tbody>
+</table>
+
+Veamos unos ejemplos indicando un <span class="badge badge-warning">string</span> como separador:  
+
+
+```js
+console.log("88.12.44.123".split(".")); // ["88", "12", "44", "123"] (4 elementos)
+console.log("1.2.3.4.5".split(".")); // ["1", "2", "3", "4", "5"] (5 elementos)
+console.log("Hola a todos".split(" ")); // ["Hola", "a", "todos"] (3 elementos)
+console.log("A,B,C,D,E".split(",", 3));    // ["A", "B", "C"] (limitado a los 3 primeros elementos)
+console.log("Código".split(""));           // ["C", "ó", "d", "i", "g", "o"] (6 elementos)
+```
+
+Observa que en el último ejemplo, el separador es una **cadena vacía**, es decir, &lt;&lt;separar por la unidad más pequeña posible&gt;&gt;. Al indicar esto, **`split()`** realiza una división carácter por carácter.
+
+Por otro lado, ten en cuenta que también es posible indicar una <span class="badge badge-danger">regexp</span> como primer parámetro y no sólo un <span class="badge badge-warning">string</span>, lo que permite realizar separaciones más versátiles y flexibles. Por lo demás, es exactamente igual a los ejemplos anteriores:  
+
+
+```js
+// Separa tanto por punto como por coma
+console.log("88.12,44.123".split(/[.,]/));   // ["88", "12", "44", "123"] (4 elementos)
+```
 
