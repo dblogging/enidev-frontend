@@ -53,18 +53,14 @@ span.tag {
 	}
 }
 
-.over {
-	transition: transform .2s ease;
-}
+
 .over-article {
 	transition: background .2s ease;
 	position:relative;
 }
 
 @media(hover: hover) {
-	.over:hover {
- 		transform: scale(1.02);
-	}
+
 	.over-article:hover {
  		background: #f3ffd3;
  		box-shadow: 2px 1px 3px #00000040;

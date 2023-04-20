@@ -9,7 +9,7 @@ next:
 ## La consola de javascript
 
 Para acceder a la consola de javascript desde el navegador, podemos pulsar: <br>
-<strong><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>I</kbd></strong> sobre la pestaña de la página web actual, lo que nos llevará al **inspector de elementos** del navegador. Este inspector es un panel de control general donde podemos ver varios aspectos de la página en la que nos encontramos: su etiquetado **HTML**, sus estilos **CSS**, etc...
+<strong><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>I</kbd></strong> o también la tecla <strong><kbd>f12</kbd></strong> sobre la pestaña de la página web actual, lo que nos llevará al **inspector de elementos** del navegador. Este inspector es un panel de control general donde podemos ver varios aspectos de la página en la que nos encontramos: su etiquetado **HTML**, sus estilos **CSS**, etc...
 
 Concretamente, a nosotros nos interesa una sección particular del inspectorde elementos. Para ello, nos moveremos a la pestaña **Console** y ya nos encontramos en la **consola de javascript** de la página.
 
@@ -83,3 +83,16 @@ console.log("%cEniDev911!",
 ```
 
 >Es importante recalcar que cuando escribimos directamente en la consola de javascript podemos obviar el `console.log()` y escribir directamente la información, pero si queremos mostrar algo en la consola desde nuestra página web o aplicación javascript, es absolutamente necesario escribir `console.log()` (o cualquiera de las funciones de su familia) en nuestro código.
+
+
+### Trucos adicionales
+
+En cualquier navegador **Google chrome** podemos pulsar ya sea <strong><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>I</kbd></strong> o <strong><kbd>f12</kbd></strong> para abrir el panel, una vez dentro podemos hacer algunos trucos. 
+
+
+#### Hacer una captura de la pantalla
+
+
+Para ello, una vez tenemos la consola abierta presionamos <strong><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd></strong>.
+
+Aparecerá una ventana con un "Ejecutar>comando" (*Run>command*) donde podremos escribir directamente acciones. En nuestro caso que queremos sacar una captura de pantalla sólo debemos escribir ***screenshot*** y pulsar <strong><kbd>ENTER</kbd></strong>

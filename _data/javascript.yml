@@ -23,3 +23,6 @@
 - category: 'DOM'
   uri: dom/crear-elementos-dom
   title: Crear elementos del DOM
+- category: 'DOM'
+  uri: dom/insertar-elementos-dom
+  title: Insertar elementos en DOM
