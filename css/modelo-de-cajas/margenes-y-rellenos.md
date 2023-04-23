@@ -1,7 +1,11 @@
 ---
 layout: post
-background: "/img/css-box-sizing-banner.png"
+color: "#3B63DB"
+background: "/img/css-margin-padding.png"
 title: Márgenes y rellenos
+previous:
+  url: 'propiedad-box-sizing'
+  title: 'CSS Propiedad box sizing'
 ---
 
 

@@ -1,5 +1,6 @@
 ---
 layout: post
+color: "#3B63DB"
 background: "/img/css-box-sizing-banner.png"
 title: Propiedad box-sizing
 previous:
@@ -13,7 +14,7 @@ next:
 
 ### El tamaño de las cajas
 
-¨Por defecto, el **modelo de cajas** de CSS siguen un esquema donde al dar un tamaño a un elemento, concretamente se le da tamaño a su contenido, de modo que si además le añadimos un borde (*border*) y/o un relleno (*padding*), se sumará al tamaño indicado previamente.
+Por defecto, el **modelo de cajas** de CSS siguen un esquema donde al dar un tamaño a un elemento, concretamente se le da tamaño a su contenido, de modo que si además le añadimos un borde (*border*) y/o un relleno (*padding*), se sumará al tamaño indicado previamente.
 
 Esto puede resultar algo poco intuitivo, ya que un elemento de tamaño **width: 200px**, con un **border: 15px** y un **padding: 20px**, tendría en realidad un tamaño total de **270px** (*15px + 15px de border izquierdo y derecho, 20px + 20px de relleno izquierdo y derecho y los 200px del contenido*). Tener que realizar estos cálculos, puede resultar complejo y poco predecible, especialmente en situaciones donde estamos muy justos de espacio.
 

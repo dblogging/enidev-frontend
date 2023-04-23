@@ -19,6 +19,9 @@
 - category: 'tipos de datos'
   uri: string/posiciones-substrings
   title: Posiciones y substrings
+- category: 'tipos de datos'
+  uri: string/buscar-y-remplazar
+  title: Buscar y remplazar
 # DOM
 - category: 'DOM'
   uri: dom/crear-elementos-dom
